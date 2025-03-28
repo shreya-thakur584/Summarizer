@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Summarizer Extension</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>News Summarizer Extension</h1>
+        <div class="summary-box">
+            <h2>Summary</h2>
+            <p id="summary-text">Your summarized content will appear here...</p>
+            <button id="summarizeBtn">Summarize</button>
+        </div>
+        <div class="buttons">
+            <button id="audio-btn">🔊 Listen</button>
+<button id="play-pause-btn" style="display:none;">Play/Pause</button> <!-- Play/Pause button -->
+        </div>
+    </div>
+    <div>
+        <label for="speed">Speed: </label>
+        <input type="range" id="speed" min="0.1" max="3" step="0.1" value="1">
+        <span id="speedValue">1x</span> <!-- Display speed value -->
+    </div>
+</div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

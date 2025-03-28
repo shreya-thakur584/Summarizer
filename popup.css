@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0A192F;
+    color: #D9E2EC;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container {
+    background: #2c5bad;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.summary-box {
+    background: #172337;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* General button styles */
+button {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Summarize button styles */
+#summarizeBtn {
+    background: linear-gradient(45deg, #4caf50, #81c784); /* Green gradient */
+    color: white;
+    margin: 10px;
+}
+
+#summarizeBtn:hover {
+    background: linear-gradient(45deg, #66bb6a, #4caf50);
+    transform: translateY(-2px);
+}
+
+#summarizeBtn:active {
+    transform: translateY(2px); /* Small press effect */
+}
+
+/* Listen button styles */
+#audio-btn {
+    background: linear-gradient(45deg, #2196f3, #64b5f6); /* Blue gradient */
+    color: white;
+    margin: 10px;
+}
+
+#audio-btn:hover {
+    background: linear-gradient(45deg, #42a5f5, #2196f3);
+    transform: translateY(-2px);
+}
+
+#audio-btn:active {
+    transform: translateY(2px); /* Small press effect */
+}
+
+/* Play/Pause button styles */
+#play-pause-btn {
+    background: linear-gradient(45deg, #ff9800, #ffb74d); /* Orange gradient */
+    color: white;
+    margin: 10px;
+    display: none; /* Initially hidden */
+}
+
+#play-pause-btn:hover {
+    background: linear-gradient(45deg, #ffb74d, #ff9800);
+    transform: translateY(-2px);
+}
+
+#play-pause-btn:active {
+    transform: translateY(2px); /* Small press effect */
+}
+

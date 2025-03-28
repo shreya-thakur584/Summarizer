@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "News Summarizer",
+    "version": "1.0",
+    "description": "Summarizes news articles and provides an audio version.",
+    "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs",
+    "http://127.0.0.1/*"
+],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": ["http://127.0.0.1:5000/*"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon.jpg",
+            "48": "icon.jpg",
+            "128": "icon.jpg"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+}
